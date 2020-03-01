@@ -6,6 +6,8 @@ import java.util.Date;
 
 /**
  * RPC服务实现
+ * <p>
+ * 切记，服务方法返回的对象必须是实现了Serializable的类型
  *
  * @author gewas
  * @version 1.0

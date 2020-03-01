@@ -6,7 +6,8 @@ import java.util.Arrays;
 /**
  * RPC通用请求类
  * <p>
- * 包含RPC调用信息：类名，方法名，方法参数类型，参数
+ * 包含RPC调用信息：类名，方法名，方法参数类型，参数。
+ * 切记要实现Serializable。
  *
  * @author gewas
  * @version 1.0
