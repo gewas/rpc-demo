@@ -12,8 +12,8 @@ import java.util.Date;
  */
 public class App {
     public static void main(String[] args) {
-        RpcClientProxy proxy = new RpcClientProxy();
-        IHelloService service = proxy.clientProxy(IHelloService.class, "localhost", 8081);
+        RpcClient rpcClient = new RpcClient();
+        IHelloService service = rpcClient.serviceProxy(IHelloService.class, "localhost", 8081);
         System.out.println(service.greeting("gewas", Date.from(Instant.now())));
     }
 }
