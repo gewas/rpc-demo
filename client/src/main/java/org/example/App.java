@@ -13,7 +13,7 @@ import java.util.Date;
 public class App {
     public static void main(String[] args) {
         RpcClient rpcClient = new RpcClient();
-        IHelloService service = rpcClient.serviceProxy(IHelloService.class, "localhost", 8081);
+        IHelloService service = rpcClient.serviceProxy(IHelloService.class, "localhost", 18081);
         System.out.println(service.greeting("gewas", Date.from(Instant.now())));
     }
 }
